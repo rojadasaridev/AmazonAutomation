@@ -16,4 +16,20 @@ export class HeaderPage {
     async clickOnAcceptCookies() {
         await this.header.acceptCookies.click();
     }
+
+    async clickOnAddress() {
+        await this.header.address.click();
+    }
+
+    async clickOnApplyButton() {
+        await this.header.postcodeApplyButton.click();
+    }
+
+    async fillWithPostcode() {
+        await this.header.enterPostcode.fill('LE46QT');
+    }
+
+    async clickOnLeftNav() {
+        await this.header.leftNav.click();
+    }
 }
