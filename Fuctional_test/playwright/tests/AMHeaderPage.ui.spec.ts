@@ -7,5 +7,9 @@ test('homepage has title and links to intro page', async ({ page }) => {
   const headerPage = new HeaderPage(page);
   await headerPage.clickOnAcceptCookies();
   await headerPage.verifyAmazonLogo();
+  await headerPage.clickOnAddress();
+  await headerPage.fillWithPostcode();
+  await headerPage.clickOnApplyButton();
+  await headerPage.clickOnLeftNav();
 
 });
